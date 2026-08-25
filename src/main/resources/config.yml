@@ -1,0 +1,17 @@
+# PowerNukkitX WaterPhysics configuration
+enabled: true
+
+# Empty or ["*"] enables every level.
+worlds:
+  - "*"
+
+flow:
+  batch-size: 512
+  tick-interval: 3
+  # Extra range used only when local water movement has stalled. The engine
+  # compares connected water at distances 2, 4, 8, ... up to this value.
+  level-lookahead: 16
+
+optimization:
+  player-proximity-check: true
+  player-proximity-chunks: 4
